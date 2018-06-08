@@ -10,9 +10,11 @@
 #include "ABTUltrasonicSensor.h"
 
 
-ABTUltrasonicSensor::ABTUltrasonicSensor(unsigned char port)
+ABTUltrasonicSensor::ABTUltrasonicSensor(unsigned char port):ABTPort(port)
 {
   _SignalPin = port;
+  //s1=pin1();
+  //s2=pin2();
 }
 double ABTUltrasonicSensor::distanceCm(int MAXcm)
 {
