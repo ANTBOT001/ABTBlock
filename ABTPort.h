@@ -38,11 +38,11 @@ public:
 
   ABTPort(void);
 
-  ABTPort(uint8_t port);
+  ABTPort(unsigned char port);
 
-  bool dRead1(uint8_t mode = INPUT);
+  bool dRead1(void);
 
-  bool dRead2(uint8_t mode = INPUT);
+  bool dRead2(void);
   
   void dWrite1(bool value);
 
@@ -57,7 +57,7 @@ public:
   void aWrite2(int value);
 
   unsigned char pin1(void);
-  unsigned char pin1(void);
+  unsigned char pin2(void);
 
 protected:
 
@@ -70,3 +70,4 @@ protected:
 
 };
 #endif 
+
