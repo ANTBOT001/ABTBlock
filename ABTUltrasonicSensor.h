@@ -19,9 +19,9 @@ class ABTUltrasonicSensor : public ABTPort
 {
 public:
 
-  ABTUltrasonicSensor(uint8_t port);
-  double distanceCm(uint16_t = 400);
-  long measure(unsigned long = 30000);
+  ABTUltrasonicSensor(unsigned char port);
+  double distanceCm(int MAXcm = 400);
+  long measure(unsigned long timeout = 30000);
 private:
   unsigned char  _SignalPin;
 };
