@@ -17,7 +17,7 @@ ABTPort::ABTPort(void)
   _port = 0;
 }
 
-ABTPort::ABTPort(uint8_t port)
+ABTPort::ABTPort(unsigned char port)
 {
   s1 = _abtPort[port].s1;
   s2 = _abtPort[port].s2;
@@ -85,3 +85,4 @@ unsigned char ABTPort::pin2(void)
 {
   return(s2);
 }
+
